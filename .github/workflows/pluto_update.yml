@@ -38,8 +38,7 @@ jobs:
           git add *.m3u
           if git diff --cached --quiet; then
             echo "No changes"
-          else
-            git commit -m "Update Pluto: New Regions and Improved Session IPs"
-            git pull --rebase origin main
-            git push origin main
-          fi
+else
+  git commit -m "Update Pluto Playlists"
+  git push
+fi
